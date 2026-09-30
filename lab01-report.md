@@ -2,9 +2,9 @@
 
 ## Загальна інформація
 
-**Здобувач освіти:** [Ваше ПІБ]
-**Група:** [Номер групи]
-**Обраний рівень складності:** 3
+**Здобувач освіти:** Самойло Тарас
+**Група:** ІПЗ-22
+**Обраний рівень складності:** 2
 
 ## Виконання завдань
 
@@ -20,7 +20,9 @@ ORDER BY table_name;
 
 Результат: У базі даних створено 8 основних таблиць (categories, customers, employees, order_items, orders, products, regions, suppliers) та 4 представлення (views).
 
-Скріншот: `![](screenshots/00-tables.png)`
+<img width="597" height="758" alt="image" src="https://github.com/user-attachments/assets/4247e9f7-f5af-44c8-b005-c465bdb53dfc" />
+
+
 
 ### Структура таблиць
 
