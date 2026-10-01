@@ -20,7 +20,8 @@ ORDER BY table_name;
 
 Результат: У базі даних створено 8 основних таблиць (categories, customers, employees, order_items, orders, products, regions, suppliers) та 4 представлення (views).
 
-<img width="597" height="758" alt="image" src="https://github.com/user-attachments/assets/4247e9f7-f5af-44c8-b005-c465bdb53dfc" />
+<img width="322" height="481" alt="image" src="https://github.com/user-attachments/assets/b3d788aa-3127-4bfb-911a-565755bc4285" />
+
 
 
 
@@ -50,7 +51,8 @@ SELECT * FROM customers;
 
 Результат: Отримано 15 записів клієнтів: фізичні особи (`individual`) та юридичні особи (`company`) з 5 міст України.
 
-Скріншот: `![](screenshots/1-1.png)`
+<img width="597" height="758" alt="image" src="https://github.com/user-attachments/assets/5aa4efff-fa32-4426-9c92-8b2f48693ad1" />
+
 
 ### 1.2 Назви товарів і їхні ціни
 
@@ -60,7 +62,8 @@ SELECT product_name, unit_price FROM products;
 
 Результат: Отримано лише два стовпці для всіх товарів каталогу.
 
-Скріншот: `![](screenshots/1-2.png)`
+<img width="768" height="964" alt="image" src="https://github.com/user-attachments/assets/d8b71a63-c6b6-417e-9e23-8ee64b5213c6" />
+
 
 ### 1.3 Контактні дані співробітників
 
@@ -70,7 +73,8 @@ SELECT first_name, last_name, phone, email FROM employees;
 
 Результат: Отримано контактні дані 8 співробітників.
 
-Скріншот: `![](screenshots/1-3.png)`
+<img width="1431" height="330" alt="image" src="https://github.com/user-attachments/assets/d688e96c-fb68-462e-9e22-3eee3ddbb238" />
+
 
 ### 2.1 Клієнти з міста Київ
 
@@ -80,7 +84,8 @@ SELECT * FROM customers WHERE city = 'Київ';
 
 Результат: Знайдено 4 клієнти з Києва.
 
-Скріншот: `![](screenshots/2-1.png)`
+<img width="967" height="537" alt="image" src="https://github.com/user-attachments/assets/0750636e-5db9-46c6-a3dc-4efe03c8653c" />
+
 
 ### 2.2 Товари дорожчі за 25000 грн
 
@@ -92,7 +97,8 @@ WHERE unit_price > 25000;
 
 Результат: Знайдено 13 товарів (смартфони-флагмани, ноутбуки, телевізори, холодильник, планшет).
 
-Скріншот: `![](screenshots/2-2.png)`
+<img width="483" height="542" alt="image" src="https://github.com/user-attachments/assets/0571f653-eb5a-4521-a67a-4ebf2a5eef32" />
+
 
 ### 2.3 Замовлення зі статусом 'delivered'
 
@@ -102,7 +108,8 @@ SELECT * FROM orders WHERE order_status = 'delivered';
 
 Результат: Знайдено 26 доставлених замовлень.
 
-Скріншот: `![](screenshots/2-3.png)`
+<img width="483" height="542" alt="image" src="https://github.com/user-attachments/assets/d1351e70-3a09-432f-9a7b-484ba27df24a" />
+
 
 ### 2.4 Співробітники відділу продажів
 
@@ -115,7 +122,8 @@ WHERE title ILIKE '%продаж%';
 
 Результат: Знайдено 3 менеджерів з продажу (Коваленко, Мельник, Гриценко).
 
-Скріншот: `![](screenshots/2-4.png)`
+<img width="539" height="370" alt="image" src="https://github.com/user-attachments/assets/7cb0ec17-939f-4386-8aa4-e004874236f6" />
+
 
 ### 3.1 Товари за зростанням ціни
 
@@ -127,7 +135,8 @@ ORDER BY unit_price ASC;
 
 Результат: Найдешевший товар - USB-C кабель (699 грн), найдорожчий - LG OLED (62999 грн).
 
-Скріншот: `![](screenshots/3-1.png)`
+<img width="960" height="191" alt="image" src="https://github.com/user-attachments/assets/8e37653a-ad9a-4419-9c15-ba9728c03100" />
+
 
 ### 3.2 Клієнти за алфавітом
 
@@ -139,7 +148,8 @@ ORDER BY contact_name;
 
 Результат: Клієнти впорядковані за прізвищем (contact_name починається з прізвища).
 
-Скріншот: `![](screenshots/3-2.png)`
+<img width="438" height="486" alt="image" src="https://github.com/user-attachments/assets/c821c242-14de-4ff2-a90e-fd78c0cf3a8f" />
+
 
 ### 3.3 Замовлення від найновіших до найстаріших
 
@@ -151,7 +161,9 @@ ORDER BY order_date DESC;
 
 Результат: Першим іде замовлення від 2024-08-20.
 
-Скріншот: `![](screenshots/3-3.png)`
+<img width="961" height="506" alt="image" src="https://github.com/user-attachments/assets/031b4140-941b-408d-a9a6-220fd5414e2c" />
+
+
 
 ### 4.1 Топ-10 найдорожчих товарів
 
@@ -164,7 +176,8 @@ LIMIT 10;
 
 Результат: Отримано 10 найдорожчих товарів.
 
-Скріншот: `![](screenshots/4-1.png)`
+<img width="442" height="459" alt="image" src="https://github.com/user-attachments/assets/3d8ce558-8abc-4b96-a56c-a5d3076513a0" />
+
 
 ### 4.2 П'ять останніх замовлень
 
@@ -177,7 +190,8 @@ LIMIT 5;
 
 Результат: Отримано 5 замовлень серпня 2024 року.
 
-Скріншот: `![](screenshots/4-2.png)`
+<img width="394" height="329" alt="image" src="https://github.com/user-attachments/assets/ee636e5e-a6ae-4522-913d-1bd6e9895d1d" />
+
 
 ### 4.3 Перші 8 клієнтів за алфавітом
 
@@ -190,7 +204,8 @@ LIMIT 8;
 
 Результат: Отримано 8 клієнтів.
 
-Скріншот: `![](screenshots/4-3.png)`
+<img width="379" height="448" alt="image" src="https://github.com/user-attachments/assets/f2ca302d-66bd-44dd-9248-7740a087f39c" />
+
 
 ---
 
@@ -204,7 +219,8 @@ SELECT * FROM customers WHERE contact_name LIKE 'Іван%';
 
 Результат: Знайдено 1 запис - Іванова Марія Сергіївна. Примітка: у БД `contact_name` зберігається у форматі «Прізвище Ім'я По батькові», тому шаблон `'Іван%'` шукає за початком прізвища.
 
-Скріншот: `![](screenshots/5-1.png)`
+<img width="1007" height="233" alt="image" src="https://github.com/user-attachments/assets/daf2b21c-29f0-4bdc-9681-77e1b6c14a40" />
+
 
 ### 5.2 Товари зі словом "phone" або "телефон"
 
@@ -216,7 +232,8 @@ WHERE product_name ILIKE '%phone%' OR product_name ILIKE '%телефон%';
 
 Результат: Знайдено iPhone 15 (слово "телефон" у назвах не зустрічається).
 
-Скріншот: `![](screenshots/5-2.png)`
+<img width="352" height="201" alt="image" src="https://github.com/user-attachments/assets/beff324d-25f5-47f5-8d21-7bfa88643f8e" />
+
 
 ### 5.3 Власні запити з LIKE
 
@@ -226,6 +243,10 @@ WHERE product_name ILIKE '%phone%' OR product_name ILIKE '%телефон%';
 SELECT product_name, unit_price
 FROM products
 WHERE product_name LIKE 'Samsung%';
+
+
+<img width="490" height="262" alt="image" src="https://github.com/user-attachments/assets/8d30cff6-6afd-4fe0-86b7-f3146ee87f10" />
+
 ```
 
 ```sql
@@ -235,7 +256,10 @@ SELECT contact_name, city
 FROM customers
 WHERE contact_name LIKE '%ович';
 ```
+<img width="395" height="423" alt="image" src="https://github.com/user-attachments/assets/f47e83b7-8a6f-41d9-876c-4e07803c27db" />
 
+
+  
 ```sql
 -- L3. МІСТИТЬ: клієнти з поштою на Gmail.
 -- Бізнес-логіка: аналіз популярності поштових сервісів серед покупців.
@@ -243,6 +267,7 @@ SELECT contact_name, email
 FROM customers
 WHERE email LIKE '%@gmail.com';
 ```
+<img width="519" height="255" alt="image" src="https://github.com/user-attachments/assets/2c0364df-4910-40a2-8df6-9a9d3a0aaf0d" />
 
 Результат: L1 - 3 товари Samsung; L2 - клієнти-чоловіки; L3 - клієнти з Gmail.
 
@@ -259,7 +284,8 @@ ORDER BY unit_price;
 
 Результат: Отримано товари середнього та вищого середнього цінового діапазону.
 
-Скріншот: `![](screenshots/6-1.png)`
+<img width="428" height="551" alt="image" src="https://github.com/user-attachments/assets/c8b88240-8477-4481-9b4d-d945eff123f2" />
+
 
 ### 6.2 Клієнти з Києва або Львова, які є юридичними особами
 
@@ -272,7 +298,8 @@ WHERE (city = 'Київ' OR city = 'Львів')
 
 Результат: Знайдено 3 компанії, усі з Києва (у Львові юридичних осіб у БД немає).
 
-Скріншот: `![](screenshots/6-2.png)`
+<img width="547" height="258" alt="image" src="https://github.com/user-attachments/assets/b08ec9e3-e94c-4df3-86c3-77e6b2f4de83" />
+
 
 ### 6.3 Власні запити з AND / OR / NOT
 
@@ -283,6 +310,7 @@ SELECT product_name, unit_price, units_in_stock
 FROM products
 WHERE units_in_stock > 0 AND NOT discontinued;
 ```
+<img width="722" height="581" alt="image" src="https://github.com/user-attachments/assets/2c9373f5-dbed-49be-ba0f-f95afc896711" />
 
 ```sql
 -- A2. Товари до 30000 грн, яких залишилось менше 10 штук.
@@ -292,6 +320,7 @@ FROM products
 WHERE unit_price < 30000 AND units_in_stock < 10
 ORDER BY units_in_stock;
 ```
+<img width="722" height="581" alt="image" src="https://github.com/user-attachments/assets/c1ba9fd3-1eee-4f7b-a674-76fe2f38b0ae" />
 
 ```sql
 -- A3. Фізичні особи не з Києва.
@@ -300,6 +329,7 @@ SELECT contact_name, city
 FROM customers
 WHERE customer_type = 'individual' AND city <> 'Київ';
 ```
+<img width="453" height="574" alt="image" src="https://github.com/user-attachments/assets/ddcf4436-3c4f-448c-a8f7-78300d574b72" />
 
 ```sql
 -- A4. Замовлення, які ще не завершені (ні доставлені, ні скасовані).
@@ -308,10 +338,12 @@ SELECT order_id, order_date, order_status
 FROM orders
 WHERE NOT (order_status = 'delivered' OR order_status = 'cancelled');
 ```
+<img width="378" height="381" alt="image" src="https://github.com/user-attachments/assets/10ac45f5-5214-451e-80ec-ccc4d23d15c6" />
 
 Результат: A1 - усі активні товари; A2 - OnePlus 12, Samsung холодильник, PlayStation 5, Xbox; A3 - роздрібні клієнти регіонів; A4 - 5 замовлень (pending, processing, shipped).
 
-Скріншот: `![](screenshots/6-3.png)`
+<img width="634" height="284" alt="image" src="https://github.com/user-attachments/assets/375f08d0-0fcb-4358-be11-7497ffd416b4" />
+
 
 ### 7.1 Клієнти з Києва, Харкова, Одеси, Дніпра
 
@@ -324,7 +356,8 @@ ORDER BY city;
 
 Результат: Знайдено 12 клієнтів (3 клієнти зі Львова відсіяні).
 
-Скріншот: `![](screenshots/7-1.png)`
+<img width="384" height="546" alt="image" src="https://github.com/user-attachments/assets/a8e4bf7f-f7e8-41b7-b0a0-1ad99cdc80c2" />
+
 
 ### 7.2 Товари в діапазоні від 10000 до 30000 грн
 
@@ -336,7 +369,8 @@ WHERE unit_price BETWEEN 10000 AND 30000;
 
 Результат: Отримано товари з ціною від 10000 до 30000 включно (межі входять).
 
-Скріншот: `![](screenshots/7-2.png)`
+<img width="471" height="562" alt="image" src="https://github.com/user-attachments/assets/0e82cd0f-1f28-42d6-9643-fe027460531b" />
+
 
 ### 7.3 Власні запити з IN, BETWEEN, IS NULL
 
@@ -347,6 +381,7 @@ SELECT product_name, category_id
 FROM products
 WHERE category_id IN (1, 2, 3);
 ```
+<img width="566" height="611" alt="image" src="https://github.com/user-attachments/assets/e24ae48d-16f3-484b-9409-2bb34b6665f2" />
 
 ```sql
 -- IN-2. Замовлення, що зараз перебувають в обробці або в дорозі.
@@ -355,6 +390,7 @@ SELECT order_id, order_status
 FROM orders
 WHERE order_status IN ('processing', 'shipped');
 ```
+<img width="566" height="611" alt="image" src="https://github.com/user-attachments/assets/d53758b4-ad7b-453a-9104-398950f9cdae" />
 
 ```sql
 -- BETWEEN-1. Замовлення за перший квартал 2024 року.
@@ -363,6 +399,7 @@ SELECT order_id, order_date
 FROM orders
 WHERE order_date BETWEEN '2024-01-01' AND '2024-03-31';
 ```
+<img width="265" height="274" alt="image" src="https://github.com/user-attachments/assets/0cb58f13-8427-47a5-b104-cc092752979d" />
 
 ```sql
 -- BETWEEN-2. Бюджетні товари від 1000 до 5000 грн.
@@ -371,6 +408,7 @@ SELECT product_name, unit_price
 FROM products
 WHERE unit_price BETWEEN 1000 AND 5000;
 ```
+<img width="474" height="169" alt="image" src="https://github.com/user-attachments/assets/f41f599b-ab15-4f29-a6bb-8c5151f33692" />
 
 ```sql
 -- IS NULL. Замовлення, які ще не відправлені.
@@ -378,7 +416,9 @@ WHERE unit_price BETWEEN 1000 AND 5000;
 SELECT order_id, order_date, order_status
 FROM orders
 WHERE shipped_date IS NULL;
-```
+```<img width="493" height="298" alt="image" src="https://github.com/user-attachments/assets/3ced89ad-c63f-477b-8a90-67a14967fdd5" />
+
+<img width="636" height="301" alt="image" src="https://github.com/user-attachments/assets/350611a0-e683-42d8-add4-05360afbc252" />
 
 ```sql
 -- IS NOT NULL. Клієнти-компанії (є назва компанії).
@@ -387,10 +427,9 @@ SELECT company_name, contact_name, contact_title
 FROM customers
 WHERE company_name IS NOT NULL;
 ```
+<img width="636" height="301" alt="image" src="https://github.com/user-attachments/assets/45f97500-bb7e-42b5-9729-d72ab9768456" />
 
-Результат: IS NULL повертає 4 невідправлені замовлення; IS NOT NULL - 6 компаній.
 
-Скріншот: `![](screenshots/7-3.png)`
 
 ### 8. Комбінування умов (5 запитів)
 
@@ -402,6 +441,7 @@ FROM products
 WHERE (product_name LIKE '%Samsung%' OR product_name LIKE '%iPhone%')
   AND unit_price BETWEEN 20000 AND 60000;
 ```
+<img width="468" height="299" alt="image" src="https://github.com/user-attachments/assets/be40798b-7848-40b8-b350-e88d26b1c3e0" />
 
 ```sql
 -- C2. IN + IS NULL + BETWEEN: фізособи з великих міст, зареєстровані у Q1 2023.
@@ -412,6 +452,7 @@ WHERE city IN ('Київ', 'Харків', 'Одеса')
   AND company_name IS NULL
   AND registration_date BETWEEN '2023-01-01' AND '2023-03-31';
 ```
+<img width="587" height="319" alt="image" src="https://github.com/user-attachments/assets/68c95ee6-8387-4170-b3ea-b0a77e6e26aa" />
 
 ```sql
 -- C3. Ноутбуки (категорія 2) до 50000 грн, що згадуються як "ноутбук" в описі.
@@ -423,6 +464,7 @@ WHERE category_id = 2
   AND description ILIKE '%ноутбук%'
   AND units_in_stock > 0;
 ```
+<img width="602" height="363" alt="image" src="https://github.com/user-attachments/assets/8df8b3e3-4a84-4c86-aa7c-436526c492c4" />
 
 ```sql
 -- C4. LIKE + NOT IN: клієнти з прізвищем на "М", не з Києва.
@@ -432,6 +474,7 @@ FROM customers
 WHERE contact_name LIKE 'М%'
   AND city NOT IN ('Київ');
 ```
+<img width="406" height="248" alt="image" src="https://github.com/user-attachments/assets/cad1a9b0-5e47-425d-9948-301670f9c732" />
 
 ```sql
 -- C5. BETWEEN + IS NULL: замовлення 2024 року, які досі не відправлені.
@@ -444,7 +487,8 @@ WHERE order_date BETWEEN '2024-01-01' AND '2024-12-31'
 
 Результат: Кожен запит поєднує щонайменше два різні типи умов і повертає змістовну вибірку для бізнес-задачі.
 
-Скріншот: `![](screenshots/8.png)`
+<img width="396" height="354" alt="image" src="https://github.com/user-attachments/assets/8f8a00ef-28ca-4f12-8b0d-e35930b84cc1" />
+
 
 ### 9. Складне сортування та пагінація
 
@@ -490,7 +534,8 @@ LIMIT 5 OFFSET 10;
 
 Результат: Сортування за кількома полями працює послідовно; P1 повертає записи 11-20, P2 - клієнтів 11-15.
 
-Скріншот: `![](screenshots/9.png)`
+<img width="433" height="258" alt="image" src="https://github.com/user-attachments/assets/c6afd359-65eb-42c0-8589-5142dfe86de9" />
+
 
 ---
 
@@ -507,7 +552,8 @@ WHERE (product_name ILIKE '%Samsung%' OR product_name ILIKE '%Apple%')
 
 Результат: Знайдено 5 товарів (4 Samsung та AirPods Pro 2 від Apple). Дужки навколо OR обов'язкові, інакше NOT ILIKE стосувався б лише другої умови.
 
-Скріншот: `![](screenshots/10-1.png)`
+<img width="468" height="299" alt="image" src="https://github.com/user-attachments/assets/74c6edbe-e757-4a71-adf3-fcca0129dcb7" />
+
 
 ### 10.2 Власні запити: LIKE + логічні оператори
 
@@ -553,7 +599,8 @@ WHERE (company_name LIKE 'ТОВ%' OR company_name LIKE 'ПП%')
 
 Результат: LL1 - кабель, навушники, клавіатура; LL2 - Xiaomi, Google Pixel, OnePlus; LL3 та LL4 - цільові сегменти клієнтів.
 
-Скріншот: `![](screenshots/10-2.png)`
+<img width="381" height="279" alt="image" src="https://github.com/user-attachments/assets/c89a4848-6d0c-4972-ac62-35849f8c5d91" />
+
 
 ### 11.1 Товари дорожчі 20000 (категорії 1 або 2) АБО дешевші 5000
 
@@ -566,7 +613,8 @@ WHERE (unit_price > 20000 AND category_id IN (1, 2))
 
 Результат: Знайдено 12 товарів: 9 дорогих смартфонів і ноутбуків та 3 дешеві (мікрохвильова піч, кабель, клавіатура).
 
-Скріншот: `![](screenshots/11-1.png)`
+<img width="590" height="531" alt="image" src="https://github.com/user-attachments/assets/8aa2d627-7cf4-4b4b-b6a9-5d0d341eb6f4" />
+
 
 ### 11.2 Власні запити з вкладеними умовами
 
@@ -601,7 +649,6 @@ WHERE (shipped_date IS NULL
 
 Результат: Дужки задають незалежні сценарії; без них через пріоритет AND над OR результат був би іншим.
 
-Скріншот: `![](screenshots/11-2.png)`
 
 ### 12.1 Звіт товарів із 6 умовами фільтрації
 
@@ -628,7 +675,8 @@ LIMIT 10;
 
 Результат: Отримано відсортований список до 10 товарів, що задовольняють усі 6 умов одночасно.
 
-Скріншот: `![](screenshots/12-1.png)`
+<img width="658" height="592" alt="image" src="https://github.com/user-attachments/assets/d931cfff-66cb-41a6-b5e2-526806bba9eb" />
+
 
 ### 12.2 Аналіз клієнтської бази з множинними критеріями
 
@@ -654,7 +702,9 @@ ORDER BY customer_type ASC, city, contact_name;
 
 Результат: Клієнти розділені на сегменти; спочатку компанії (company < individual за алфавітом), далі за містом та іменем.
 
-Скріншот: `![](screenshots/12-2.png)`
+
+<img width="571" height="544" alt="image" src="https://github.com/user-attachments/assets/f043bbca-6438-492b-9371-686b16149fb2" />
+
 
 ### 13.1 Аналіз товарів за ціновими сегментами
 
@@ -701,7 +751,6 @@ ORDER BY inventory_value DESC;
 
 Результат: Бюджетний сегмент - 3 товари, решта розподілена між середнім і преміум. Найбільше коштів на складі заморожено в дорогих смартфонах і ноутбуках.
 
-Скріншот: `![](screenshots/13-1.png)`
 
 ### 13.2 Географічний розподіл клієнтів
 
@@ -749,8 +798,6 @@ ORDER BY order_date;
 
 Результат: Клієнти зосереджені в 5 містах; Київ - 4 клієнти, Львів - 3 (усі фізособи), B2B-клієнти в Києві, Харкові та Дніпрі.
 
-Скріншот: `![](screenshots/13-2.png)`
-
 ### 13.3 Часові патерни в замовленнях
 
 ```sql
@@ -792,8 +839,6 @@ ORDER BY days_to_ship DESC, order_date;
 ```
 
 Результат: Дані охоплюють січень-серпень 2024 року; T4 виявляє замовлення, що відправлялись довше 2 днів.
-
-Скріншот: `![](screenshots/13-3.png)`
 
 ### 14. Креативні запити
 
@@ -850,16 +895,16 @@ LIMIT 5;
 
 Результат: K3 знаходить клієнтів із міськими номерами (переважно компанії); K4 повертає генерального директора Петренка О.І.
 
-Скріншот: `![](screenshots/14.png)`
+<img width="468" height="299" alt="image" src="https://github.com/user-attachments/assets/709da2dc-183d-4ec7-b96b-95370c60d799" />
+
 
 ---
 
 ## Висновки
 
-**Самооцінка**: 5
+**Самооцінка**: 4
 
-**Обґрунтування**: Виконано завдання всіх трьох рівнів: базові вибірки, фільтрація, LIKE/ILIKE, логічні оператори з дужками, IN/BETWEEN/IS NULL, сортування за кількома полями, пагінація, аналітичні та креативні запити. До всіх самостійних запитів додано коментарі з бізнес-логікою. Під час роботи врахував особливості БД: `contact_name` зберігається як «Прізвище Ім'я По батькові», тому шаблони LIKE будувалися відповідно.
-
+Обґрунтування: Виконано всі завдання рівнів 1 і 2: базові вибірки, фільтрація, LIKE/ILIKE, логічні оператори AND/OR/NOT з дужками, IN, BETWEEN, IS NULL / IS NOT NULL, комбіновані умови, сортування за кількома полями та пагінація (LIMIT/OFFSET). До всіх самостійних запитів додано коментарі з поясненням бізнес-логіки. Під час роботи врахував особливості БД: contact_name зберігається як «Прізвище Ім'я По батькові», тому шаблони LIKE будувалися відповідно. Завдання рівня 3 не виконувались, тому оцінка - 4.
 ---
 
 ## Відповіді на контрольні запитання
